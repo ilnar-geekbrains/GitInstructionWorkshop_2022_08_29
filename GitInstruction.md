@@ -54,6 +54,13 @@
 
 ### Базовая работа с ветками в git.
 
++ **git branch** - просмотр существующих веток
++ **git branch new_branch** - создание ветки new_branch
++ **git checkout new_branch** - переход на ветку new_branch
++ **git checkout -b new_branch** - создать ветку new_branch и перейти на неё
++ **git checkout master** - вернуться на ветку master
+
+
 ## Работа с удаленными репозиториями.
 
 ### Что такое удаленный репозиторий и для чего он нужен
