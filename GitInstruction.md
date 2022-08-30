@@ -62,6 +62,54 @@
 
 ### Базовая работа с удаленными репозиториями GitHub
 
+## <span style="color:red">**GIT HUB.**</span> Работа с удаленными репозиториями
+
+[*ссылка на git hub*](https://github.com)
+
+---
+### Отправить с локального компьтера на удаленный репозиторий и обратно. <span style="color:MediumOrchid">**push and pull**</span>
+1. Создать на git hub пустой репозиторий: вкладка repositories --> кнопка *new* --> задать имя в repository name --> ввести описание в description --> кнопка *cleate repository*
+
+откроется старница с подсказками (она пригодится при дальнейшей работе в VS Code):
+
+>…or create a new repository on the command line
+echo "# instr_git_dz_podusov" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/apodusov/instr_git_dz_podusov.git
+git push -u origin main
+
+>…or push an existing repository from the command line
+git remote add origin https://github.com/apodusov/instr_git_dz_podusov.git
+git branch -M main
+git push -u origin main
+2. Перейти в **VS Code** --> открыть/создать папку --> создать файл (например, instr.md) --> внести изменения в файл (набрать текст и т.п.) --> в терминале набрать стандартные команды: *init, add, commit -m*
+3. В терминал добавляем оставшиеся команды из подстказок на git hub: 
+* git remote add origin https://github.com/apodusov/instr_git_dz_podusov.git (если выдает ошибку, то к origin добавить символы)
+* git branch -M main
+* git push -u origin main
+4. Авторизоваться на git hub (только впервый раз)
+5. Перейти в **git hub**, обновить страницу. Если все правильно сделано набранный в VS Code текст отобразиться в git hub.
+6. Чтобы внести изменения уже в git hub --> в репозитории нажать на *карандаш* --> добавить текст (внести изменения) --> в поле для коммита добавить описание --> нажать кнопку *commit changes*
+7. Вернуться в **VS Code** --> в терминале набрать команду *git pull*
+8. Если все правильно в VS Code отобразятся изменения.
+---
+### Внести предложения по добавлению в чужой удаленный репозиторий. <span style="color:MediumOrchid">**clone and pull request**</span>
+1. Перейти по известной ссылке на репозиторий в git hub
+2. Нажать на кнопку *Fork* --> нажать *create fork*
+Таким образом чужой репозиторий скопирован в наш, далее его можно редактировать в VS Code. Для этого:
+3. В скопированном репозитории нажать кнопку *Code* --> скопировать адрес репозитория
+4. Перейти в **VS Code** --> открыть нужную папку --> в терминале набрать команду **git clone** (скопированный адрес репозитория)
+Таким образом получилась локальная версия репозитория.
+5. Создать новую ветку и перейти в нее
+6. В папке создать файл, внести в него нужные изменения --> в терминале набрать стандартные команды: *init, add, commit -m*
+7. В терминале набрать команду *git push
+Если возникнет подсказка с нужной копандой (указание ветки) скопировать ее и запустить в терминале
+8. Вернуться в **git hub** на страницу скопированного репозитория, обновить ее --> *Compare & pull request*
+9. Добавить комментарий --> нажать на кнопку *Create pull request*
+
 ## Совместная работа над проектом (fork, pull request)
 
 ### Инструкция по созданию pull request
