@@ -9,6 +9,8 @@
 
 ### Для чего нужна система контроля версий
 
+ffffffffffffffffffffffffff
+
 ## Установка git и VSCode на ваш ПК.
 
 ### Установка VSCode на ваш ПК.
