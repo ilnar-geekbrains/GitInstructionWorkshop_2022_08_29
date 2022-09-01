@@ -11,6 +11,17 @@
 
 ## Установка git и VSCode на ваш ПК.
 
+#### MacOS
+1. Скачать бинарный установщик Git по ссылке https://sourceforge.net/projects/git-osx-installer/
+2. Скачать установщик VSCode по ссылке https://go.microsoft.com/fwlink/?LinkID=534106
+3. Установить оба пакета на Mac.
+4. После установки необходимо создать терминал в VSCode и настроить Git, прописав в параментрах username и email пользователя.
+
+``` git config --global user.name "your username"```
+
+
+```git config --global user.email "email@example.com"```
+
 ### Установка VSCode на ваш ПК.
 
 ### Скачивание
